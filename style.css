@@ -1,0 +1,135 @@
+/* JNS-Net: 公式のパステル色を使った文書型レイアウト。 */
+:root {
+  --ink: #3B3B4A;
+  --muted: #626271;
+  --pink: #F3A7C3;
+  --sky: #8FD3EC;
+  --light-sky: #9DDAEF;
+  --lavender: #C8BCE6;
+  --hero-tint: #F5F1FB;
+  --footer-tint: #FDF2F7;
+  --line: #E4DDEF;
+  --font: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: var(--ink); font: 16px/1.85 var(--font); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, dl, ol { margin: 0; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: #335B70; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+button { font: inherit; }
+section { scroll-margin-top: 4rem; }
+h3, main { scroll-margin-top: 5rem; }
+.container { width: min(100% - 3rem, 1080px); margin-inline: auto; }
+.document > * { max-width: 760px; }
+.skip-link { position: absolute; top: .5rem; left: .75rem; z-index: 200; padding: .5rem 1rem; background: #fff; transform: translateY(-180%); }
+.skip-link:focus { transform: none; }
+.site-header { position: sticky; top: 0; z-index: 100; background: #fff; border-top: 3px solid var(--pink); border-bottom: 1px solid var(--line); }
+.header-inner { max-width: 1130px; margin: auto; padding: .8rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.logo-link { display: flex; align-items: center; gap: .6rem; color: var(--ink); text-decoration: none; flex-shrink: 0; }
+.logo-link img { width: 30px; height: 36px; object-fit: contain; }
+.logo-text { font-size: 1.2rem; font-weight: 700; white-space: nowrap; }
+.site-nav { display: flex; align-items: center; gap: 1.25rem; }
+.site-nav a { color: var(--ink); font-size: .87rem; text-decoration: none; white-space: nowrap; padding-block: .4rem; }
+.site-nav a:hover, .site-nav a[aria-current] { text-decoration: underline; text-decoration-color: var(--sky); text-decoration-thickness: 3px; }
+.nav-toggle { display: none; border: 1px solid #BFC4CC; background: #fff; color: var(--ink); padding: .4rem .65rem; min-height: 44px; border-radius: 3px; cursor: pointer; }
+.hero { background: var(--hero-tint); border-bottom: 2px solid var(--lavender); }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1fr) 320px; grid-template-areas: "heading mark" "copy mark"; column-gap: 4rem; align-items: center; padding-block: 3.5rem; }
+.hero-heading { grid-area: heading; }
+.hero-copy { grid-area: copy; }
+.eyebrow { color: var(--muted); font-size: .9rem; margin-bottom: .7rem; }
+h1 { font-size: clamp(1.8rem, 3.2vw, 2.65rem); line-height: 1.45; font-weight: 700; letter-spacing: .015em; }
+.keep-phrase { display: inline-block; }
+.hero-name { display: block; font-size: 1.45rem; letter-spacing: .04em; margin-top: .35rem; }
+.hero-lead { font-size: 1.14rem; line-height: 1.8; margin: 1.25rem 0 .75rem; }
+.hero-inner p:not(.eyebrow):not(.hero-lead) { color: var(--ink); }
+.hero-mark { grid-area: mark; width: 100%; height: 100%; max-height: 400px; min-height: 0; object-fit: contain; }
+.actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.button { display: inline-block; padding: .7rem 1.3rem; border-radius: 3px; text-decoration: none; font-weight: 600; line-height: 1.6; text-align: center; }
+.button-primary { color: var(--ink); background: var(--sky); border: 1px solid var(--sky); }
+.button-primary:hover { background: var(--light-sky); border-color: var(--ink); text-decoration: underline; }
+.text-link { font-weight: 500; }
+.section { padding-block: 2.5rem; }
+.section + .section { border-top: 1px solid var(--line); }
+h2 { font-size: 1.5rem; line-height: 1.5; margin-bottom: 1.2rem; padding-left: .8rem; border-left: 4px solid var(--pink); }
+h3 { font-size: 1.22rem; line-height: 1.6; margin: 1.8rem 0 .75rem; padding-bottom: .35rem; border-bottom: 2px solid var(--lavender); }
+p + p { margin-top: .8rem; }
+.people { margin-top: .7rem; }
+.people > div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); padding-block: .6rem; border-bottom: 1px solid var(--line); }
+.people dt { font-weight: 600; }
+.people dd { margin: 0; }
+.people dd span { display: block; color: var(--muted); font-size: .9rem; }
+.small-note { color: var(--muted); font-size: .9rem; }
+.people + .small-note { margin-top: .9rem; }
+.process-list { padding-left: 1.6rem; margin-block: 1.2rem; }
+.process-list li { padding-left: .25rem; margin-block: .65rem; }
+.process-list li::marker { color: var(--ink); font-weight: 600; }
+.form-entry { margin-block: 1.4rem; }
+.form-status { font-weight: 600; margin-bottom: .55rem; font-size: .92rem; }
+.link-note { color: var(--muted); font-size: .8rem; margin-top: .5rem; }
+.page-heading { padding-top: 2.7rem; }
+.breadcrumb { color: var(--muted); font-size: .85rem; margin-bottom: 1rem; }
+.page-lead { font-size: 1.05rem; margin-top: 1rem; }
+.page-body { padding-bottom: 1.5rem; }
+.discord-example { max-width: 360px; margin: 1.25rem 0; }
+.activity-example { max-width: 240px; }
+/* 画像の原本は保持し、表示枠で端末のステータスバー・入力欄を隠す。 */
+.screenshot-window { display: block; overflow: hidden; }
+.screenshot-window img { width: 100%; max-width: none; }
+.screenshot-visits { aspect-ratio: 588 / 900; }
+.screenshot-visits img { margin-top: -35.714286%; }
+.screenshot-reports { aspect-ratio: 588 / 600; }
+.screenshot-reports img { margin-top: -30.612245%; }
+.discord-example figcaption { margin-top: .65rem; color: var(--muted); font-size: .82rem; line-height: 1.7; }
+.more-examples { margin-block: 1.3rem; }
+.more-examples summary { color: #335B70; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.more-examples summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+.activity-record { padding-block: 2.5rem; border-top: 1px solid var(--line); }
+.record-date { color: var(--muted); font-size: .88rem; margin-bottom: .5rem; }
+.site-footer { background: var(--footer-tint); border-top: 2px solid var(--pink); margin-top: 1rem; }
+.footer-inner { padding-block: 2rem; }
+.footer-name { font-size: .95rem; font-weight: 600; }
+.footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-block: 1rem; }
+.footer-links a { font-size: .85rem; }
+.footer-social { margin-block: .75rem; }
+.social-link { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; color: var(--ink); }
+.social-link svg { flex-shrink: 0; }
+.copyright { font-size: .75rem; color: var(--muted); }
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: minmax(0, 1fr) 240px; column-gap: 2rem; }
+  .header-inner { flex-wrap: wrap; gap: .5rem; }
+  .site-nav { width: 100%; flex-wrap: wrap; gap: .4rem 1.2rem; }
+  .js .nav-toggle { display: inline-block; }
+  .js .site-nav { display: none; }
+  .js .site-nav.open { display: flex; flex-direction: column; align-items: stretch; padding-block: .6rem; }
+  .js .site-nav a { padding: .6rem .25rem; border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 640px) {
+  .container { width: calc(100% - 2.5rem); }
+  .header-inner { padding: .6rem 1.25rem; }
+  .logo-link { gap: .45rem; }
+  .logo-text { font-size: 1.1rem; }
+  .nav-toggle { font-size: .8rem; padding-inline: .5rem; }
+  .hero-inner { grid-template-columns: minmax(0, 1fr) 112px; grid-template-areas: "heading mark" "copy copy"; column-gap: 1rem; row-gap: 1rem; padding-block: 2rem; }
+  .hero-heading h1 { font-size: 1.6rem; }
+  .hero-heading .keep-phrase { display: block; }
+  h1 { font-size: 1.85rem; }
+  .hero-name { font-size: 1.1rem; margin-top: .45rem; }
+  .eyebrow { font-size: .8rem; }
+  .hero-lead { font-size: 1.05rem; }
+  .wide-only { display: none; }
+  .hero-mark { width: 112px; height: auto; }
+  .hero-copy .hero-lead { margin-top: 0; }
+  .actions { gap: 1rem 1.4rem; margin-top: 1.25rem; }
+  .section { padding-block: 2rem; }
+  h2 { font-size: 1.3rem; }
+  .page-heading { padding-top: 2rem; }
+  .page-heading h1 { font-size: 1.65rem; }
+  .page-lead { font-size: 1rem; }
+  .process-list { padding-left: 1.35rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
