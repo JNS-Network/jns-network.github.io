@@ -66,6 +66,8 @@ p + p { margin-top: .8rem; }
 .process-list { padding-left: 1.6rem; margin-block: 1.2rem; }
 .process-list li { padding-left: .25rem; margin-block: .65rem; }
 .process-list li::marker { color: var(--ink); font-weight: 600; }
+.principles-list { list-style: none; padding-left: 1.5em; }
+.principles-list li { margin-block: .8rem; text-indent: -1.5em; }
 .form-entry { margin-block: 1.4rem; }
 .form-status { font-weight: 600; margin-bottom: .55rem; font-size: .92rem; }
 .link-note { color: var(--muted); font-size: .8rem; margin-top: .5rem; }
