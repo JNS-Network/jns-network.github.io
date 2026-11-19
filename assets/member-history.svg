@@ -12,13 +12,7 @@
 <text x="48.00" y="302" text-anchor="start">9/26</text>
 <text x="258.00" y="302" text-anchor="middle">10/23</text>
 <text x="468.00" y="302" text-anchor="end">11/19</text>
-<path d="M48.00,209.00L55.78,181.50L149.11,154.00L320.22,126.50L452.44,99.00L468.00,71.50" fill="none" stroke="#3B3B4A" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
-<circle cx="48.00" cy="209.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
-<circle cx="55.78" cy="181.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
-<circle cx="149.11" cy="154.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
-<circle cx="320.22" cy="126.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
-<circle cx="452.44" cy="99.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
-<circle cx="468.00" cy="71.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<path d="M48.00,209.00C50.59,199.83 53.19,183.78 55.78,181.50C86.89,154.19 118.00,157.25 149.11,154.00C206.15,148.05 263.19,133.03 320.22,126.50C364.30,121.46 408.37,126.03 452.44,99.00C457.63,95.82 462.81,80.67 468.00,71.50" fill="none" stroke="#3B3B4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
 <text x="458.00" y="54.50" text-anchor="end" font-size="28" font-weight="700">約70人</text>
 </g>
 </svg>
