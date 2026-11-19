@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="326" viewBox="0 0 520 326" role="img" aria-labelledby="title desc">
+<title id="title">Discord参加者数の推移</title>
+<desc id="desc">2026年9月26日ごろ約20人から、2026年11月19日時点で約70人までの大まかな推移。Botを除く概数です。</desc>
+<rect width="520" height="326" fill="#FFFFFF"/>
+<rect x="48" y="44" width="420" height="220" fill="#F5F1FB"/>
+<g fill="#3B3B4A" font-family="Arial, sans-serif" font-size="22">
+<path d="M48,264H468" stroke="#E4DDEF"/><text x="37" y="271" text-anchor="end">0</text>
+<path d="M48,209H468" stroke="#E4DDEF"/><text x="37" y="216" text-anchor="end">20</text>
+<path d="M48,154H468" stroke="#E4DDEF"/><text x="37" y="161" text-anchor="end">40</text>
+<path d="M48,99H468" stroke="#E4DDEF"/><text x="37" y="106" text-anchor="end">60</text>
+<path d="M48,44H468" stroke="#E4DDEF"/><text x="37" y="51" text-anchor="end">80</text>
+<text x="48.00" y="302" text-anchor="start">9/26</text>
+<text x="258.00" y="302" text-anchor="middle">10/23</text>
+<text x="468.00" y="302" text-anchor="end">11/19</text>
+<path d="M48.00,209.00L55.78,181.50L149.11,154.00L320.22,126.50L452.44,99.00L468.00,71.50" fill="none" stroke="#3B3B4A" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+<circle cx="48.00" cy="209.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<circle cx="55.78" cy="181.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<circle cx="149.11" cy="154.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<circle cx="320.22" cy="126.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<circle cx="452.44" cy="99.00" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<circle cx="468.00" cy="71.50" r="5" fill="#8FD3EC" stroke="#3B3B4A" stroke-width="1.5"/>
+<text x="458.00" y="54.50" text-anchor="end" font-size="28" font-weight="700">約70人</text>
+</g>
+</svg>

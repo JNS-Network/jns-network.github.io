@@ -90,6 +90,10 @@ p + p { margin-top: .8rem; }
 .more-examples { margin-block: 1.3rem; }
 .more-examples summary { color: #335B70; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
 .more-examples summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+#member-history-title { scroll-margin-top: 6rem; }
+.member-history-figure { margin: 1.4rem 0 1rem; max-width: 640px; }
+.member-history-figure img { width: 100%; }
+.member-history-figure figcaption { font-size: .9rem; line-height: 1.8; }
 .activity-record { padding-block: 2.5rem; border-top: 1px solid var(--line); }
 .record-date { color: var(--muted); font-size: .88rem; margin-bottom: .5rem; }
 .site-footer { background: var(--footer-tint); border-top: 2px solid var(--pink); margin-top: 1rem; }
